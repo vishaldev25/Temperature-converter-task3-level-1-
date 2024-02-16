@@ -19,14 +19,14 @@
                     <div class="both-container">
                         <div class="label-container">
                             <label for = "from" class="label">From</label>
-                            <select name="unit" id="from" class="unit">
+                            <select id="from" class="unit">
                                 <option value="celsius" selected>Celsius</option>
                                 <option value="fahrenheit" >Fahrenheit</option>
                             </select>
                         </div>
                         <div class="label-container">
                             <label for = "to" class="label">To</label>
-                            <select name="unit" id="to" class="unit">
+                            <select id="to" class="unit">
                                 <option value="celsius">Celsius</option>
                                 <option value="fahrenheit" selected>Fahrenheit</option>
                             </select>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="degree-container">
                         <label for="input" class="label">Degree</label>
-                        <input type="text" name="degree" id="input"  class = "unit degree"  />
+                        <input type="number" step="any" name="degree" id="input" value="0"  class = "unit degree"  />
                     </div>
                     <div class="degree-container">
                         <label for = "result" class="label label1">Result</label>

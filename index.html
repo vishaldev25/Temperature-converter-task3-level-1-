@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" href="assets\favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Temperature Converter</h1>
+        <div class="card">
+            <div class="input-container">
+                <form class="form-container" type = "submit" id = "form">
+                    <div class="both-container">
+                        <div class="label-container">
+                            <label for = "from" class="label">From</label>
+                            <select name="unit" id="from" class="unit">
+                                <option value="celsius" selected>Celsius</option>
+                                <option value="fahrenheit" >Fahrenheit</option>
+                            </select>
+                        </div>
+                        <div class="label-container">
+                            <label for = "to" class="label">To</label>
+                            <select name="unit" id="to" class="unit">
+                                <option value="celsius">Celsius</option>
+                                <option value="fahrenheit" selected>Fahrenheit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="degree-container">
+                        <label for="input" class="label">Degree</label>
+                        <input type="text" name="degree" id="input"  class = "unit degree"  />
+                    </div>
+                    <div class="degree-container">
+                        <label for = "result" class="label label1">Result</label>
+                        <p id = "result" name = "result" class="result"></p>
+                    </div>
+                    <button type="submit" id = "button" class="button">Convert</button>
+                </form>
+            </div>
+            <img src = "https://res.cloudinary.com/dfhnfwuur/image/upload/v1708078022/My%20Work/temp_image_loeg2q.jpg" class="tempImage" />
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

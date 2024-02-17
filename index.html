@@ -22,6 +22,7 @@
                             <select id="from" class="unit">
                                 <option value="celsius" selected>Celsius</option>
                                 <option value="fahrenheit" >Fahrenheit</option>
+                                <option value="kelvin">Kelvin</option>
                             </select>
                         </div>
                         <div class="label-container">
@@ -29,6 +30,7 @@
                             <select id="to" class="unit">
                                 <option value="celsius">Celsius</option>
                                 <option value="fahrenheit" selected>Fahrenheit</option>
+                                <option value="kelvin">Kelvin</option>
                             </select>
                         </div>
                     </div>
@@ -38,7 +40,7 @@
                     </div>
                     <div class="degree-container">
                         <label for = "result" class="label label1">Result</label>
-                        <p id = "result" name = "result" class="result"></p>
+                        <p id = "result" name = "result" class="result unit">0</p>
                     </div>
                     <button type="submit" id = "button" class="button">Convert</button>
                 </form>

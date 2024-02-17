@@ -36,19 +36,28 @@
                     </div>
                     <div class="degree-container">
                         <label for="input" class="label">Degree</label>
-                        <input type="number" step="any" name="degree" id="input" value="0"  class = "unit degree"  />
+                        <input type="number" step="any" name="degree" id="input" value="0"  class = "unit degree"  />  
                     </div>
                     <div class="degree-container">
                         <label for = "result" class="label label1">Result</label>
-                        <p id = "result" name = "result" class="result unit">0</p>
+                        <div class="result-degress-container">
+                            <p id = "result" name = "result" class="result unit">0</p>
+                            <p id = "resultDegree" class="resultDegree"></p>
+                        </div>
+                        
                     </div>
                     <button type="submit" id = "button" class="button">Convert</button>
                 </form>
             </div>
             <img src = "https://res.cloudinary.com/dfhnfwuur/image/upload/v1708078022/My%20Work/temp_image_loeg2q.jpg" class="tempImage" />
         </div>
-
+        
+        <footer>
+            <h3>Developed By Vishal</h3>
+            <p class="copyright" id = "copyright"></p>
+        </footer>
     </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>

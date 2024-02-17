@@ -40,7 +40,7 @@ body{
 
 .tempImage{
     width: 100%;
-    height: 180px;
+    height: 250px;
     order: -2;
 }
 
@@ -73,8 +73,8 @@ body{
 .label{
     font-family: "Lora", serif;
     font-size: 20px;
-    font-weight: 400;
-    color: #000000;
+    font-weight: 600;
+    color: #7705e1;
     margin-bottom: 8px;
 }
 .unit{
@@ -107,13 +107,15 @@ body{
 }
 .result{
     font-family: "Lora", serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: bold;
     color: #000000;
     background-color: transparent;
     outline: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     width: 100%;
+    margin-right: 10px;
+    margin-top: 0px;
 }
 
 .button{
@@ -130,9 +132,44 @@ body{
     text-align: center;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: bottom;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.copyright{
+    margin: 0;
+}
+
+.result-degress-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.resultDegree{
+    font-family: "Lora", serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #0c1f98;
+    margin-top: 0px;
+}
+
 @media screen and (min-width: 768px){
+
+    .heading{
+        font-size: 32px;
+    }
     .container{
-        height: 100vh;
+        min-height: 100vh;
         border: 1px solid #B1B2FF;
         display: flex;
         flex-direction: column;
@@ -152,37 +189,19 @@ body{
     }
     .tempImage{
         width:280px;
-        height: 390px;
+        height: 379px;
         order: 1;
     }
-    
     .form-container{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        background-color: #D2DAFF;
-        padding: 25px;
-        margin-right: 15px;
+        margin-right: 10px;
     }
-    .both-container{
-        display: flex;
-        flex-direction: space-around;
-        justify-content: center;
-        align-items: center;
+
+    .result{
+        font-size: 30px;
+        
     }
-    .label-container{
-        display: flex;
-        flex-direction: column;
-        margin-right: 15px;
-        margin-bottom: 10px;
+    .button{
+        margin-top: 0px;
     }
-    
-    .label{
-        font-family: "Lora", serif;
-        font-size: 20px;
-        font-weight: 400;
-        color: #000000;
-        margin-bottom: 8px;
-    }
+
 }
